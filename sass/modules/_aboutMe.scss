@@ -1,12 +1,22 @@
 .aboutMeText {
   font-size: $footer-nav-font-size;
   font-family: $main-font;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 186px;
+  margin-left: auto;
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
-.aboutMe:last-child {
+#aboutMe p:last-child {
   display: none;
 }
 
-.aboutMe {
+#aboutMe {
   background-color: grey;
+  height: 390px;
+  display: flex;
+  flex-direction: row;
 }
