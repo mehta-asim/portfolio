@@ -1,11 +1,13 @@
-.gallery_avatar {
-  width: 167.5px;
-  height: 167.5px;
-}
-
 #gallery {
-  max-width: 335px;
+  // max-width: 335px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  img {
+    width: 168px;
+    height: 168px;
+  }
 }

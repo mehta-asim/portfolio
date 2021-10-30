@@ -9,8 +9,13 @@ footer {
 #copyrightText {
   font-family: $copyright-font;
   font-size: $copyright-font-size;
+  transform: rotate(90deg);
 }
 
 ul li {
   font-size: $footer-nav-font-size;
+}
+
+#footerNav {
+  display: none;
 }

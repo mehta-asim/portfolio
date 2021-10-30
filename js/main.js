@@ -9,7 +9,7 @@
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        debugger;
+        // debugger;
 
         buildImg(data);
       });
@@ -17,14 +17,14 @@
 
   function buildImg(imgSource) {
     console.log(imgSource);
-    debugger;
+    // debugger;
 
     let isource = Object.keys(imgSource[0]);
-    debugger;
+    // debugger;
     // let source = JSON.parse(imgSource);
     isource.forEach((img) => {
       let panel = galleryPiece.cloneNode(true);
-      debugger;
+      // debugger;
 
       let imgContainer = panel.firstElementChild.firstElementChild;
 
@@ -38,7 +38,7 @@
     });
 
     // Object.keys(imgSource).forEach((img) => console.log(img));
-    debugger;
+    // debugger;
   }
 
   getSrc();

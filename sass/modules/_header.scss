@@ -12,8 +12,14 @@
   margin-left: auto;
 }
 
-#brandLogo {
+.brandLogo {
   width: 153px;
   height: 70px;
   background-color: grey;
+  margin: 0 auto;
+}
+
+ul a {
+  text-decoration: none;
+  color: $main-color;
 }
