@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#copyrightText {
+  font-family: $copyright-font;
+  font-size: $copyright-font-size;
+  transform: rotate(90deg);
+}
+
+ul li {
+  font-size: $footer-nav-font-size;
+}
+
+#footerNav {
+  display: none;
+}
