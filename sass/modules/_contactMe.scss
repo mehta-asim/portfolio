@@ -1,24 +1,55 @@
 #contactMe {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  height: 390px;
+  background-color: grey;
 }
 
 #contactMeText {
   margin-top: 20px;
+  text-align: left;
+  font-size: 45px;
+  margin-bottom: 27px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#name {
+  width: 279px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+#email {
+  width: 335px;
+  border: none;
+  margin-bottom: 20px;
 }
 #message {
   width: 335px;
   height: 100px;
+  margin-bottom: 20px;
+  border: none;
 }
 
 #submit {
   background-color: white;
-  border: 1px dashed grey;
+  border: 1px solid grey;
+  width: 84px;
+  height: 33px;
+}
+
+input {
+  font-size: 21px;
+  background-color: white;
+  text-align: left;
 }

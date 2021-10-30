@@ -4,12 +4,14 @@ footer {
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 20px;
+  height: 150px;
 }
 
 #copyrightText {
   font-family: $copyright-font;
   font-size: $copyright-font-size;
-  transform: rotate(90deg);
+  // transform: rotate(90deg);
+  // vertical-align: middle;
 }
 
 ul li {
@@ -18,4 +20,8 @@ ul li {
 
 #footerNav {
   display: none;
+}
+
+#socialMedia {
+  padding-top: 40px;
 }
