@@ -1,0 +1,24 @@
+{
+  "name": "mehta_a_fip",
+  "version": "1.0.0",
+  "description": "this is to showcase the FIP for level 3 IDP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehta-asim/Mehta_A_FIP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehta-asim/Mehta_A_FIP/issues"
+  },
+  "homepage": "https://github.com/mehta-asim/Mehta_A_FIP#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.4"
+  }
+}
