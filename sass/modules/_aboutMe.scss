@@ -1,0 +1,12 @@
+.aboutMeText {
+  font-size: $footer-nav-font-size;
+  font-family: $main-font;
+}
+
+.aboutMe:last-child {
+  display: none;
+}
+
+.aboutMe {
+  background-color: grey;
+}

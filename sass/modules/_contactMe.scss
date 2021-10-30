@@ -1,0 +1,24 @@
+#contactMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#contactMeText {
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#message {
+  width: 335px;
+  height: 100px;
+}
+
+#submit {
+  background-color: white;
+  border: 1px dashed grey;
+}

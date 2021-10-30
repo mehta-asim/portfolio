@@ -1,0 +1,10 @@
+body {
+  color: $main-color;
+}
+
+.container {
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
