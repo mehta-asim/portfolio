@@ -5,8 +5,8 @@ import TheLightboxComponent from "./components/TheLightboxComponent.js";
 import TheThumbNail from "./components/TheThumbNailComponent.js";
 import TheLogo from "./components/TheLogoComponent.js";
 import { sendEmail } from "./components/TheEmailComponent.js";
-import { processMailSuccess } from "./components/TheEmailComponent.js";
-import { processMailFailure } from "./components/TheEmailComponent.js";
+import { processMailSuccess } from "./components/TheEmailProcessComponent.js";
+import { processMailFailure } from "./components/TheEmailProcessComponent.js";
 
 (() => {
   const myVue = new Vue({
@@ -43,8 +43,8 @@ import { processMailFailure } from "./components/TheEmailComponent.js";
           document.querySelector(".navMenu").classList.remove("bvisible");
         }
       },
-      async sendMail(event) {
-        debugger;
+      sendMail(event) {
+        // debugger;
         event.preventDefault();
         sendEmail(event.currentTarget.parentNode)
           .then((data) => processMailSuccess(data))

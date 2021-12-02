@@ -1,6 +1,6 @@
 <?php
 //DEBUG ONLY< REMOVE AFTER FINAL FOR PROD
-// ini_set('display_errors', 1);
+ini_set('display_errors', 1);
 
 //TODO: takes care of the form submissions [work as post office]
 
@@ -68,18 +68,18 @@ $results['message'] = $visitor_message;
 
 // 2.Prepare the email[Print out lavbel and put on package/ prepare the package in certain format]
 $email_subject = sprintf('Inquiry from Portfolio Site: %s', $visitor_name);
-$email_recipient = 'test@123.ca';
+$email_recipient = 'me@asimmehta.com';
 $email_message = sprintf('Name: %s, EMail: %s, Message: %s',$visitor_name, $visitor_email, $visitor_message);
 
 // make sure you run the code in php 7.4+
 // otherwise you would need to make $email_headers as string
 $email_headers = array(
     // best practice, but it may need you to have a mail set up in noreply@yourdomain.ca
-    // 'From' => 'noreply@asimmehta.com',
-    // 'Reply-To' => $visitor_email,
+    'From' => 'me@asimmehta.com',
+    'Reply-To' => $visitor_email,
 
     //you can still use it, if above is too much work
-    'From' => $visitor_email
+    // 'From' => $visitor_email
 );
 
 // 3.Send out email[send out package]
