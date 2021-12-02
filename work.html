@@ -6,38 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Home Page</title>
+    <title>Work Page</title>
 </head>
 
 <body>
+    <main id="app">
     <h1 class="hidden">Asim Mehta's Portfolio</h1>
     <div class="container">
         <header>
             <nav id="headerNav">
                 <h2 class="hidden">Header Navigation</h2>
-                <button id="navButton" class="expanded"></button>
-                <div class="navMenu">
-                    <ul id="hamMenu">
-                        <li><a href="index.html">.home</a></li>
-                        <li><a href="#">work</a></li>
-                        <li><a href="about-me.html">about me</a></li>
-                        <li><a href="contact-us.html">contact us</a></li>
-                    </ul>
-                </div>
+                <button @click="burgerMenu" id="navButton" class="expanded"></button>
+                <burger></burger>
             </nav>
-            <div class="brandLogo">
-                <a href="index.html"><img src="" alt=""></a>
-            </div>
+            <logo></logo>
         </header>
 
         <section id="gallery">
+            <thumb v-on:showdata="popLightBox" v-for="item in portfolioData" :piece="item" :key="item.id"></thumb>
+
         </section>
 
-        <template id="galleryPieceTemplate">
+        <lightbox class="lightbox" v-on:closelb="closeLightBox" :class='{visible: isVisible}' :piece="currentPortfolioItem"></lightbox>
+
+        <!-- <template id="galleryPieceTemplate">
             <div class="gallery_avatar">
                 <img src="" alt="">
             </div>
-        </template>
+        </template> -->
         
         <footer>
             <h2 id="copyrightText">© asimmehta</h2>
@@ -56,7 +52,10 @@
 
     
     </div>
-    <script src="js/main.js"></script>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script src="js/main.js" type="module" defer></script>
 </body>
 
 </html>

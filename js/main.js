@@ -1,45 +1,98 @@
+//import statements go at the top
+import { getData } from "./components/TheDataMiner.js";
+import TheHamburgerMenu from "./components/TheHamBurgerComponent";
+import TheLightboxComponent from "./components/TheLightboxComponent.js";
+import TheThumbNail from "./components/TheThumbNailComponent.js";
+import TheLogo from "./components/TheLogoComponent.js";
+
 (() => {
-  const theGallery = document.querySelector("#gallery"),
-    galleryPiece = document.querySelector("#galleryPieceTemplate").content;
-
-  let baseURL = "./includes/index.php";
-
-  function getSrc() {
-    fetch(baseURL)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        // debugger;
-
-        buildImg(data);
-      });
-  }
-
-  function buildImg(imgSource) {
-    console.log(imgSource);
-    // debugger;
-
-    let isource = Object.keys(imgSource[0]);
-    // debugger;
-    // let source = JSON.parse(imgSource);
-    isource.forEach((img) => {
-      let panel = galleryPiece.cloneNode(true);
+  const myVue = new Vue({
+    created: function () {
+      //go fetch the portfolio data here
+      //make it available in the Vue instance
+      getData(null, (data) => (this.portfolioData = data));
       // debugger;
+    },
 
-      let imgContainer = panel.firstElementChild.firstElementChild;
+    data: {
+      //this is storing the database info from our fetch call
 
-      panel.firstElementChild.dataset.key = img.id;
+      portfolioData: [],
+      message: "hello from Vue",
+      isVisible: false,
+      currentPortfolioItem: {},
+    },
 
-      let finalSource = imgSource[0][img].Source;
+    methods: {
+      popLightBox(item) {
+        this.currentPortfolioItem = item;
 
-      imgContainer.src = `images/${finalSource}`;
+        this.isVisible = true;
+      },
 
-      theGallery.appendChild(panel);
-    });
+      closeLightBox() {
+        this.isVisible = false;
+      },
+      burgerMenu() {
+        if (document.querySelector(".navMenu").classList[1] != "bvisible") {
+          document.querySelector(".navMenu").classList.add("bvisible");
+        } else {
+          document.querySelector(".navMenu").classList.remove("bvisible");
+        }
+      },
+    },
 
-    // Object.keys(imgSource).forEach((img) => console.log(img));
-    // debugger;
-  }
-
-  getSrc();
+    components: {
+      thumb: TheThumbNail,
+      burger: TheHamburgerMenu,
+      logo: TheLogo,
+      lightbox: TheLightboxComponent,
+    },
+  }).$mount("#app");
 })();
+
+// (() => {
+//   const theGallery = document.querySelector("#gallery"),
+//     galleryPiece = document.querySelector("#galleryPieceTemplate").content;
+
+//   let baseURL = "./includes/index.php";
+
+//   function getSrc() {
+//     fetch(baseURL)
+//       .then((res) => res.json())
+//       .then((data) => {
+//         console.log(data);
+//         // debugger;
+
+//         buildImg(data);
+//       });
+//   }
+
+//   function buildImg(imgSource) {
+//     console.log(imgSource);
+//     // debugger;
+
+//     let isource = Object.keys(imgSource[0]);
+//     // debugger;
+//     // let source = JSON.parse(imgSource);
+//     isource.forEach((img) => {
+//       let panel = galleryPiece.cloneNode(true);
+//       // debugger;
+
+//       let imgContainer = panel.firstElementChild.firstElementChild;
+
+//       panel.firstElementChild.dataset.key = img.id;
+
+//       let finalSource = imgSource[0][img].Source;
+
+//       imgContainer.src = `images/${finalSource}`;
+
+//       theGallery.appendChild(panel);
+//     });
+
+//     // Object.keys(imgSource).forEach((img) => console.log(img));
+//     // debugger;
+//   }
+
+//   getSrc();
+// })();

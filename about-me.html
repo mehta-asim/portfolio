@@ -8,29 +8,21 @@
     <title>Home Page</title>
 </head>
 <body>
+    <main id="app">
     <h1 class="hidden">Asim Mehta's Portfolio</h1>
     <div class="container">
         <header>
             <nav id="headerNav">
                 <h2 class="hidden">Header Navigation</h2>
-                <button id="navButton" class="expanded"></button>
-                <div class="navMenu">
-                    <ul id="hamMenu">
-                        <li><a href="index.html">.home</a></li>
-                        <li><a href="work.html">work</a></li>
-                        <li><a href="#">about me</a></li>
-                        <li><a href="contact-us.html">contact us</a></li>
-                    </ul>
-                </div>
+                <button @click="burgerMenu" id="navButton" class="expanded"></button>
+                <burger></burger>
             </nav>
-            <div class="brandLogo">
-                <a href="index.html"><img src="" alt=""></a>
-            </div>
+            <logo></logo>
         </header>
  
         <section id="aboutMe">
             <p class="aboutMeText">this is where about me text will go in. this is where about me text will go in. this is where about me text will go in. this is where about me text will go in. this is where about me text will go in. </p>
-            <p class="aboutMeText">this is where about me text will go in.</p>
+            <p class="aboutMeText">this is where about me text will go in. this is where about me text will go in. this is where about me text will go in. this is where about me text will go in. this is where about me text will go in. </p>
         </section>
 
         <footer>
@@ -48,6 +40,9 @@
             </ul>
         </footer>
     </div>
-    <script src="js/main.js"></script>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script src="js/main.js" type="module" defer></script>
 </body>
 </html>

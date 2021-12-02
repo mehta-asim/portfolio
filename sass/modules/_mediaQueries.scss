@@ -1,2 +1,14 @@
+@import "./header";
+@import "./index";
+@import "./about-me";
+@import "./contact-us";
+@import "./work";
+@import "./lightbox";
+@import "./footer";
+
 @media screen and (min-width: 960px) {
+  @import "./header_d";
+  @import "./footer_d";
+  @import "./aboutMe_d";
+  @import "./contactMe_d";
 }

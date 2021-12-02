@@ -2,9 +2,12 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
   margin-left: 20px;
   margin-right: 20px;
   height: 150px;
+  margin-bottom: 20px;
 }
 
 #copyrightText {
@@ -16,6 +19,7 @@ footer {
 
 ul li {
   font-size: $footer-nav-font-size;
+  font-family: $main-font;
 }
 
 #footerNav {
@@ -24,4 +28,5 @@ ul li {
 
 #socialMedia {
   padding-top: 40px;
+  text-align: right;
 }

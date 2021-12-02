@@ -13,6 +13,8 @@
   margin-bottom: 27px;
   margin-left: 20px;
   margin-right: 20px;
+  font-family: "barlowregular";
+  color: white;
 }
 
 form {
@@ -21,24 +23,31 @@ form {
   justify-content: flex-start;
   margin-left: 20px;
   margin-right: 20px;
+  font-family: "barlowlight";
 }
 
 #name {
   width: 279px;
   border: none;
   margin-bottom: 20px;
+  opacity: 15%;
+  color: #d8d8d8;
 }
 
 #email {
   width: 335px;
   border: none;
   margin-bottom: 20px;
+
+  color: #d8d8d8;
 }
 #message {
   width: 335px;
   height: 100px;
   margin-bottom: 20px;
   border: none;
+  opacity: 15%;
+  color: #d8d8d8;
 }
 
 #submit {
@@ -46,10 +55,20 @@ form {
   border: 1px solid grey;
   width: 84px;
   height: 33px;
+  color: #d8d8d8;
 }
 
 input {
   font-size: 21px;
   background-color: white;
   text-align: left;
+  opacity: 15%;
+  border-radius: 5px;
+}
+
+textarea {
+  font-family: "barlowlight";
+  font-size: 21px;
+  color: #d8d8d8;
+  border-radius: 5px;
 }
