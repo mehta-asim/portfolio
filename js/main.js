@@ -4,6 +4,9 @@ import TheHamburgerMenu from "./components/TheHamBurgerComponent";
 import TheLightboxComponent from "./components/TheLightboxComponent.js";
 import TheThumbNail from "./components/TheThumbNailComponent.js";
 import TheLogo from "./components/TheLogoComponent.js";
+import { sendEmail } from "./components/TheEmailComponent.js";
+import { processMailSuccess } from "./components/TheEmailComponent.js";
+import { processMailFailure } from "./components/TheEmailComponent.js";
 
 (() => {
   const myVue = new Vue({
@@ -39,6 +42,13 @@ import TheLogo from "./components/TheLogoComponent.js";
         } else {
           document.querySelector(".navMenu").classList.remove("bvisible");
         }
+      },
+      async sendMail(event) {
+        debugger;
+        event.preventDefault();
+        sendEmail(event.currentTarget.parentNode)
+          .then((data) => processMailSuccess(data))
+          .catch((err) => processMailFailure(err));
       },
     },
 

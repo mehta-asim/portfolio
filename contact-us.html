@@ -24,11 +24,11 @@
 
         <section id="contactMe">
             <h2 id="contactMeText">contact me</h2>
-            <form action="form.php" method="post">
-                <input type="text" required id="name" placeholder="name">
-                <input type="email" required id="email" placeholder="email">
-                <textarea required id="message" placeholder="your questions..."></textarea>
-                <input id="submit" type="submit" name="send" value="submit">
+            <form action="/Mehta_A_FIP/includes/mail/send.php" method="POST" id="mail-form">
+                <input type="text" required id="name" name="name" placeholder="name">
+                <input type="email" required id="email" name="email" placeholder="email">
+                <textarea required id="message" name="message" placeholder="your questions..."></textarea>
+                <input v-on:click="sendMail" id="submit" type="submit" name="send" value="submit">
             </form>
         </section>
 
