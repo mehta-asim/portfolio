@@ -1,0 +1,64 @@
+.lightbox {
+  display: none;
+  position: absolute;
+  width: 335px;
+  height: 370px;
+  border: solid 2px rgb(0, 0, 0);
+  background-image: url("../images/lightbox-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  h2 {
+    font-size: 35px;
+    font-family: "barlowsemibold";
+    color: $main-color;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-family: "barlowregular";
+    color: $main-color;
+    margin-top: 10px;
+  }
+
+  img {
+    cursor: pointer;
+    width: 10px;
+    height: 12.58px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  .image-holder {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .video-player {
+    margin-left: 10px;
+    margin-right: 10px;
+    // video {
+    //   width: 213px;
+    //   height: 20px;
+    // }
+  }
+
+  h3 {
+    cursor: pointer;
+  }
+}
+
+.visible {
+  display: block !important;
+}

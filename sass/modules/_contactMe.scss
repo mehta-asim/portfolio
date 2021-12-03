@@ -3,7 +3,9 @@
   flex-direction: column;
   justify-content: center;
   height: 390px;
-  background-color: grey;
+  background-image: url("../images/contactus-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #contactMeText {
@@ -13,6 +15,9 @@
   margin-bottom: 27px;
   margin-left: 20px;
   margin-right: 20px;
+  font-family: "barlowregular";
+  color: white;
+  text-shadow: 2px 2px 8px #000000;
 }
 
 form {
@@ -21,35 +26,69 @@ form {
   justify-content: flex-start;
   margin-left: 20px;
   margin-right: 20px;
+  font-family: "barlowlight";
 }
 
 #name {
   width: 279px;
   border: none;
   margin-bottom: 20px;
+
+  color: #d8d8d8;
 }
 
 #email {
   width: 335px;
   border: none;
   margin-bottom: 20px;
+
+  color: #d8d8d8;
 }
 #message {
   width: 335px;
   height: 100px;
   margin-bottom: 20px;
   border: none;
+  color: #d8d8d8;
 }
 
 #submit {
-  background-color: white;
-  border: 1px solid grey;
   width: 84px;
   height: 33px;
+  color: #d8d8d8;
+  text-align: center;
+  border: 0px;
+}
+#submit:hover {
+  color: black;
 }
 
 input {
   font-size: 21px;
-  background-color: white;
+  background-color: rgba($color: #ffffff, $alpha: 0.15);
   text-align: left;
+  border-radius: 5px;
+  font-family: "barlowlight";
+  box-shadow: 2px 2px 8px #000000;
+  box-shadow: 2px 2px 8px #000000;
+}
+
+input:hover {
+  background-color: white;
+  color: black;
+}
+
+textarea {
+  font-family: "barlowlight";
+  font-size: 21px;
+  color: #d8d8d8;
+  border-radius: 5px;
+  background-color: rgba($color: #ffffff, $alpha: 0.15);
+  box-shadow: 2px 2px 8px #000000;
+  resize: none;
+}
+
+textarea:hover {
+  background-color: white;
+  color: black;
 }

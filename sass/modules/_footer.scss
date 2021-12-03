@@ -2,9 +2,15 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
-  height: 150px;
+  align-items: center;
+  align-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 130px;
+  padding-bottom: 20px;
+  background-image: url("../images/footer-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #copyrightText {
@@ -12,16 +18,38 @@ footer {
   font-size: $copyright-font-size;
   // transform: rotate(90deg);
   // vertical-align: middle;
+  margin-top: auto;
 }
 
 ul li {
   font-size: $footer-nav-font-size;
+  font-family: $main-font;
 }
 
 #footerNav {
   display: none;
+
+  a:hover {
+    opacity: 60%;
+  }
 }
 
 #socialMedia {
   padding-top: 40px;
+  text-align: right;
+  img {
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+  }
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    margin-top: 5px;
+  }
+  a:hover {
+    opacity: 60%;
+  }
 }

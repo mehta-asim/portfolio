@@ -10,52 +10,49 @@
 </head>
 
 <body>
+    <main id="app">
     <h1 class="hidden">Asim Mehta's Portfolio</h1>
     <div class="container">
         <header>
             <nav id="headerNav">
                 <h2 class="hidden">Header Navigation</h2>
-                <button id="navButton" class="expanded"></button>
-                <div class="navMenu">
-                    <ul id="hamMenu">
-                        <li><a href="index.html">.home</a></li>
-                        <li><a href="work.html">work</a></li>
-                        <li><a href="about-me.html">about me</a></li>
-                        <li><a href="#">contact us</a></li>
-                    </ul>
-                </div>
+                <button @click="burgerMenu" id="navButton" class="expanded"></button>
+                <burger></burger>
             </nav>
-            <div class="brandLogo">
-                <a href="index.html"><img src="" alt=""></a>
-            </div>
+            <logo></logo>
         </header>
 
-        <section id="contactMe">
+        <contactform></contactform>
+
+        <!-- <section id="contactMe">
             <h2 id="contactMeText">contact me</h2>
-            <form action="form.php" method="post">
-                <input type="text" required id="name" placeholder="name">
-                <input type="email" required id="email" placeholder="email">
-                <textarea required id="message" placeholder="your questions..."></textarea>
-                <input id="submit" type="submit" name="send" value="submit">
+            <form action="./includes/mail/send.php" method="POST" id="mail-form">
+                <input type="text" required id="name" name="name" placeholder="name">
+                <input type="email" required id="email" name="email" placeholder="email">
+                <textarea required id="message" name="message" placeholder="your questions..."></textarea>
+                <input v-on:click="sendMail" id="submit" type="submit" name="send" value="submit">
             </form>
-        </section>
+        </section> -->
 
         <footer>
-            <h2 id="copyrightText">© asimmehta</h2>
+            <h2 id="copyrightText">© asimmehta | 2021</h2>
             <ul id="socialMedia">
-                <li><a href="github.com">github</a></li>
-                <li><a href="instagram.com">instagram</a></li>
-                <li><a href="linkedin.com">linked in</a></li>
+                <li><a href="https://github.com/mehta-asim">github<img src="images/github.svg" alt="github link"></a></li>
+                <li><a href="https://instagram.com/asim.mehta?utm_medium=copy_link">instagram<img src="images/insta.svg" alt="instagram profile link"></a></li>
+                <li><a href="https://www.linkedin.com/in/asimmehtawork/">linked in<img src="images/linkedin.svg" alt="linked in profile link"></a></li>
             </ul>
             <ul id="footerNav">
-                <li><a href="index.html">.home</a></li>
+                <li><a href="index.html">home</a></li>
                 <li><a href="work.html">work</a></li>
                 <li><a href="about-me.html">about me</a></li>
                 <li><a href="#">contact me</a></li>
             </ul>
         </footer>
     </div>
-    <script src="js/main.js"></script>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script src="js/main.js" type="module" defer></script>
 </body>
 
 </html>

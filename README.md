@@ -68,22 +68,22 @@ In terms of the design I wanted to go with a minimal look so that the focus goes
 <br>
 <h2>Web Wireframes</h2>
 <h3>Mobile Size</h3>
-<img src="images/mobile-index.jpg" height="500">
-<img src="images/mobile-work.jpg" height="500">
-<img src="images/mobile-contact.jpg" height="500">
-<img src="images/mobile-am.jpg" height="500">
+<img src="assets/mobile-index.jpg" height="500">
+<img src="assets/mobile-work.jpg" height="500">
+<img src="assets/mobile-contact.jpg" height="500">
+<img src="assets/mobile-am.jpg" height="500">
 <br>
 <h3>Web Size</h3>
-<img src="images/web-index.jpg" height="500">
-<img src="images/web-work.jpg" height="500">
-<img src="images/web-contact.jpg" height="500">
-<img src="images/web-am.jpg" height="500">
+<img src="assets/web-index.jpg" height="500">
+<img src="assets/web-work.jpg" height="500">
+<img src="assets/web-contact.jpg" height="500">
+<img src="assets/web-am.jpg" height="500">
 <br>
 <h2>Web Design</3>
-<img src="images/webdesign-index.jpg" height="500">
-<img src="images/webdesign-work.jpg" height="500">
-<img src="images/webdesign-contact.jpg" height="500">
-<img src="images/webdesign-am.jpg" height="500">
+<img src="assets/webdesign-index.jpg" height="500">
+<img src="assets/webdesign-work.jpg" height="500">
+<img src="assets/webdesign-contact.jpg" height="500">
+<img src="assets/webdesign-am.jpg" height="500">
 
 <!-- GETTING STARTED -->
 

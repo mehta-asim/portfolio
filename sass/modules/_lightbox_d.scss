@@ -1,0 +1,25 @@
+.lightbox {
+  width: 600px;
+  height: 390px;
+  background-image: url("../images/lightbox-bg-desk.svg");
+  //   margin-left: 180px;
+  //   margin-right: 180px;
+
+  h2 {
+    font-size: 55px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  p {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  img {
+    width: 12px;
+    height: 15.09px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+}

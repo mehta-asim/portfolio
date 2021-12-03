@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="598" height="390" viewBox="0 0 598 390">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_33" data-name="Rectangle 33" width="598" height="390" transform="translate(26 150)" fill="#fff" stroke="#707070" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_11" data-name="Mask Group 11" transform="translate(-26 -150)" clip-path="url(#clip-path)">
+    <g id="Group_15" data-name="Group 15" transform="translate(26 787.777) rotate(-90)" opacity="0.1">
+      <g id="Group_7" data-name="Group 7" transform="translate(0 0)">
+        <path id="Path_17" data-name="Path 17" d="M495.554,0H0L247.776,281.552ZM16.86,7.622H478.694L247.776,270.016Z"/>
+      </g>
+      <g id="Group_8" data-name="Group 8" transform="translate(63.251 24.185)">
+        <path id="Path_18" data-name="Path 18" d="M298.761,0,241.432,65.11,184.057,6.953,125.65,64.271,69.36,0H0l184.091,208.99,55.4-62.9C285.636,93.715,346.734,24.354,362.553,6.4L368.122.076ZM16.87,7.624H65.9L125.231,75.36,183.97,17.717l57.78,58.566L302.2,7.625l49.064.053c-21.533,24.444-75.659,85.89-117.491,133.379l-49.684,56.4Z"/>
+      </g>
+      <g id="Group_9" data-name="Group 9" transform="translate(199.161 111.339)">
+        <path id="Path_19" data-name="Path 19" d="M96.307,0H0L48.054,54.686ZM16.843,7.622H79.418L48.065,43.153Z"/>
+      </g>
+    </g>
+    <g id="Group_16" data-name="Group 16" transform="translate(624 -97.777) rotate(90)" opacity="0.1">
+      <g id="Group_7-2" data-name="Group 7" transform="translate(0 0)">
+        <path id="Path_17-2" data-name="Path 17" d="M495.554,0H0L247.776,281.552ZM16.86,7.622H478.694L247.776,270.016Z"/>
+      </g>
+      <g id="Group_8-2" data-name="Group 8" transform="translate(63.251 24.185)">
+        <path id="Path_18-2" data-name="Path 18" d="M298.761,0,241.432,65.11,184.057,6.953,125.65,64.271,69.36,0H0l184.091,208.99,55.4-62.9C285.636,93.715,346.734,24.354,362.553,6.4L368.122.076ZM16.87,7.624H65.9L125.231,75.36,183.97,17.717l57.78,58.566L302.2,7.625l49.064.053c-21.533,24.444-75.659,85.89-117.491,133.379l-49.684,56.4Z"/>
+      </g>
+      <g id="Group_9-2" data-name="Group 9" transform="translate(199.161 111.339)">
+        <path id="Path_19-2" data-name="Path 19" d="M96.307,0H0L48.054,54.686ZM16.843,7.622H79.418L48.065,43.153Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

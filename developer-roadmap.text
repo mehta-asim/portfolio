@@ -1,8 +1,0 @@
-#Gallery Functionality and Data Retrieval
-
-For the gallery I have thought of using blocks to showcase different pieces of work.
-How that would work is it would have all the thumbnails for work pieces and on click more inofmration about that work piece would be revealed.
-How that would happen is I would make a table with all the necessary information and fill it in the work pieces sequence.
-Now I can object.keys that table and assign it keys which would match the id in the table and then compare both of them to get the correct data for the appropriate work piece and then just use js to build and render that data on to the page.
-As the gallery expands I want some of the squares to stretch into a rectangle revelaing an ultrawide thumbnail for that piece of work.
-I am planning to use flexbox to kind of let that img container grow until a certain width and then cap it using max-width.
