@@ -79,7 +79,7 @@ In terms of the design I wanted to go with a minimal look so that the focus goes
 <img src="assets/web-contact.jpg" height="500">
 <img src="assets/web-am.jpg" height="500">
 <br>
-<h2>Web Design</3>
+<h2>Web Design</3><br>
 <img src="assets/webdesign-index.jpg" height="500">
 <img src="assets/webdesign-work.jpg" height="500">
 <img src="assets/webdesign-contact.jpg" height="500">
