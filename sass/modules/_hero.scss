@@ -1,6 +1,7 @@
 #hero {
-  //   background: url(../images/heroBG.jpg);
-  background-color: grey;
+  background-image: url("../images/hero-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   height: 390px;
   // margin-top: 40px;
 }
@@ -11,4 +12,5 @@
   text-align: center;
   line-height: 390px;
   color: white;
+  text-shadow: 2px 2px 8px #000000;
 }

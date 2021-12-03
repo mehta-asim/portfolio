@@ -16,13 +16,14 @@ export default {
   //   <i @click="closeMe" class="fa-solid fa-circle-xmark"></i>
   template: `
     <section class="lightboxWrapper">
+    <img @click="closeMe" src="images/close.svg" alt="close button">
+    <h2>{{piece.name}}</h2>
     
 
     <component  v-if="piece.mediaType" :is="activeComponent" :piece="piece" ></component>
 
-    <h2>{{piece.name}}</h2>
+    
     <p>{{piece.description}}</p>
-    <h3 @click="closeMe" id="close">X</h3>
     </section>
     `,
 

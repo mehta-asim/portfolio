@@ -14,7 +14,7 @@ export default {
   template: `
   <div class="navMenu">
   <ul id="hamMenu">
-      <li><a href="index.html">.home</a></li>
+      <li><a href="index.html">home</a></li>
       <li><a href="work.html">work</a></li>
       <li><a href="about-me.html">about me</a></li>
       <li><a href="contact-us.html">contact us</a></li>

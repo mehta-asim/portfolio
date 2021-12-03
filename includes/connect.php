@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
-        'host' => 'localhost', // this will change when you go live
-        'dbname' => 'portfolio', // update this with your database name
+        'host' => 'db5005716565.hosting-data.io', // this will change when you go live
+        'dbname' => 'dbs4809741', // update this with your database name
         'charset' => 'utf8'
     );
 
@@ -9,8 +9,8 @@
 
     //This is the DB credentials
 
-    $db_user = 'root';
-    $db_pass = ''; // windows users leave this blank
+    $db_user = 'dbu630542';
+    $db_pass = 'F26@Ip10'; // windows users leave this blank
 
     try {
         $pdo = new PDO($dsn, $db_user, $db_pass);
@@ -21,3 +21,11 @@
         echo 'Connection Error:'.$exception->getMessage();
         exit();
     }
+
+
+    // 'host' => 'db5005716565.hosting-data.io', // this will change when you go live
+    //     'dbname' => 'dbs4809741', // update this with your database name
+    //     'charset' => 'utf8
+
+    // $db_user = 'dbu630542';
+    // $db_pass = 'F26@Ip10';

@@ -4,9 +4,7 @@ import TheHamburgerMenu from "./components/TheHamBurgerComponent";
 import TheLightboxComponent from "./components/TheLightboxComponent.js";
 import TheThumbNail from "./components/TheThumbNailComponent.js";
 import TheLogo from "./components/TheLogoComponent.js";
-import { sendEmail } from "./components/TheEmailComponent.js";
-import { processMailSuccess } from "./components/TheEmailProcessComponent.js";
-import { processMailFailure } from "./components/TheEmailProcessComponent.js";
+import TheForm from "./components/TheFormComponent.js";
 
 (() => {
   const myVue = new Vue({
@@ -43,13 +41,6 @@ import { processMailFailure } from "./components/TheEmailProcessComponent.js";
           document.querySelector(".navMenu").classList.remove("bvisible");
         }
       },
-      sendMail(event) {
-        // debugger;
-        event.preventDefault();
-        sendEmail(event.currentTarget.parentNode)
-          .then((data) => processMailSuccess(data))
-          .catch((err) => processMailFailure(err));
-      },
     },
 
     components: {
@@ -57,52 +48,7 @@ import { processMailFailure } from "./components/TheEmailProcessComponent.js";
       burger: TheHamburgerMenu,
       logo: TheLogo,
       lightbox: TheLightboxComponent,
+      contactform: TheForm,
     },
   }).$mount("#app");
 })();
-
-// (() => {
-//   const theGallery = document.querySelector("#gallery"),
-//     galleryPiece = document.querySelector("#galleryPieceTemplate").content;
-
-//   let baseURL = "./includes/index.php";
-
-//   function getSrc() {
-//     fetch(baseURL)
-//       .then((res) => res.json())
-//       .then((data) => {
-//         console.log(data);
-//         // debugger;
-
-//         buildImg(data);
-//       });
-//   }
-
-//   function buildImg(imgSource) {
-//     console.log(imgSource);
-//     // debugger;
-
-//     let isource = Object.keys(imgSource[0]);
-//     // debugger;
-//     // let source = JSON.parse(imgSource);
-//     isource.forEach((img) => {
-//       let panel = galleryPiece.cloneNode(true);
-//       // debugger;
-
-//       let imgContainer = panel.firstElementChild.firstElementChild;
-
-//       panel.firstElementChild.dataset.key = img.id;
-
-//       let finalSource = imgSource[0][img].Source;
-
-//       imgContainer.src = `images/${finalSource}`;
-
-//       theGallery.appendChild(panel);
-//     });
-
-//     // Object.keys(imgSource).forEach((img) => console.log(img));
-//     // debugger;
-//   }
-
-//   getSrc();
-// })();

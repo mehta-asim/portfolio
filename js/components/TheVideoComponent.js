@@ -5,6 +5,6 @@ export default {
 
   template: `
              <section class="video-player">
-                <video :src='"videos/" + piece.Source' controls></video>
+                <video :src='"videos/" + piece.Source' width="60%" controls></video>
             </section>`,
 };

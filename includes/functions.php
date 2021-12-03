@@ -2,8 +2,8 @@
 
 $result = array();
 
-function getImgSrc($conn){
-    $query = "SELECT * FROM imagesrc";
+function getGallery($conn){
+    $query = "SELECT * FROM gallery";
 
 $runQuery = $conn->query($query);
 

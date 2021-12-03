@@ -3,7 +3,9 @@
   flex-direction: column;
   justify-content: center;
   height: 390px;
-  background-color: grey;
+  background-image: url("../images/contactus-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #contactMeText {
@@ -15,6 +17,7 @@
   margin-right: 20px;
   font-family: "barlowregular";
   color: white;
+  text-shadow: 2px 2px 8px #000000;
 }
 
 form {
@@ -30,7 +33,7 @@ form {
   width: 279px;
   border: none;
   margin-bottom: 20px;
-  opacity: 15%;
+
   color: #d8d8d8;
 }
 
@@ -46,24 +49,33 @@ form {
   height: 100px;
   margin-bottom: 20px;
   border: none;
-  opacity: 15%;
   color: #d8d8d8;
 }
 
 #submit {
-  background-color: white;
-  border: 1px solid grey;
   width: 84px;
   height: 33px;
   color: #d8d8d8;
+  text-align: center;
+  border: 0px;
+}
+#submit:hover {
+  color: black;
 }
 
 input {
   font-size: 21px;
-  background-color: white;
+  background-color: rgba($color: #ffffff, $alpha: 0.15);
   text-align: left;
-  opacity: 15%;
   border-radius: 5px;
+  font-family: "barlowlight";
+  box-shadow: 2px 2px 8px #000000;
+  box-shadow: 2px 2px 8px #000000;
+}
+
+input:hover {
+  background-color: white;
+  color: black;
 }
 
 textarea {
@@ -71,4 +83,12 @@ textarea {
   font-size: 21px;
   color: #d8d8d8;
   border-radius: 5px;
+  background-color: rgba($color: #ffffff, $alpha: 0.15);
+  box-shadow: 2px 2px 8px #000000;
+  resize: none;
+}
+
+textarea:hover {
+  background-color: white;
+  color: black;
 }

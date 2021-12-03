@@ -1,6 +1,6 @@
 <?php
 //DEBUG ONLY< REMOVE AFTER FINAL FOR PROD
-ini_set('display_errors', 1);
+// ini_set('display_errors', 1);
 
 //TODO: takes care of the form submissions [work as post office]
 
@@ -41,35 +41,13 @@ if(empty($_POST['name']) or  empty($_POST['email']) or empty($_POST['message']))
     exit;
 }
 
-// if(empty($_POST['firstname'])){
-//     $fname_err = "first name is required";
-// } else{
-//     $visitor_name = filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
-// }
-
-// if(empty($_POST['lastname'])){
-//     $lname_err = "last name is required";
-// } else{
-//     $visitor_name .= ' '.filter_var($_POST['lastname'], FILTER_SANITIZE_STRING);
-// }
-
-// if(empty($_POST['email'])){
-//     $email_err = "email is required";
-// } else{
-//     $visitor_email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);}
-
-// if(empty($_POST['message'])){
-//     $message_err = "message is required";
-// } else{
-//     $visitor_message = filter_var(htmlspecialchars($_POST['message']), FILTER_SANITIZE_STRING);}
-
 $results['name'] = $visitor_name;
 $results['message'] = $visitor_message;
 
 // 2.Prepare the email[Print out lavbel and put on package/ prepare the package in certain format]
 $email_subject = sprintf('Inquiry from Portfolio Site: %s', $visitor_name);
 $email_recipient = 'me@asimmehta.com';
-$email_message = sprintf('Name: %s, EMail: %s, Message: %s',$visitor_name, $visitor_email, $visitor_message);
+$email_message = sprintf('Name: %s, Email: %s, Message: %s',$visitor_name, $visitor_email, $visitor_message);
 
 // make sure you run the code in php 7.4+
 // otherwise you would need to make $email_headers as string
@@ -87,7 +65,7 @@ $email_headers = array(
 $email_result = mail($email_recipient, $email_subject, $email_message, $email_headers);
 
 if($email_result){
-    $results['message'] = sprintf('Thank you for contact us, %s. You willl get a reply within 24 hours', $visitor_name);
+    $results['message'] = sprintf('Thank you for contacting us, %s. You willl get a reply within 24 hours', $visitor_name);
 }else{
     $results['message'] = sprintf('We are sorry but the email did not go through.');
 }

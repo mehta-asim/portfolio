@@ -5,12 +5,15 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 40px;
   min-width: 375px;
-  margin-bottom: 20px;
 
   img {
     width: 168px;
     height: 168px;
+    cursor: pointer;
+  }
+
+  img:hover {
+    opacity: 60%;
   }
 }

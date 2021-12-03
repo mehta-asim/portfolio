@@ -9,7 +9,7 @@ export default {
 
   template: `
     <div class="gallery_avatar">
-    <img @click="showmydata" :src='"images/" + piece.Source' :alt="piece.source">
+    <img @click="showmydata" :src='"images/" + piece.thumb' :alt="piece.thumb">
 </div>
       `,
 
