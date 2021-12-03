@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/mehta-asim/Mehta_A_FIP/">
-    <img src="images/logo.svg" alt="Logo" height="100">
+    <img src="images/white-logo.svg" alt="Logo" height="100">
   </a>
 
   <h3 align="center">Asim Mehta's Portfolio</h3>
@@ -64,7 +64,7 @@ This project is about showcasing the work that I have done in the past and the o
 <h3>Design</h3>
 In terms of the design I wanted to go with a minimal look so that the focus goes on the work.<br>
 <h2>Logo</h2>
-<img src="images/logo.svg" height="300">
+<img src="images/white-logo.svg" height="300">
 <br>
 <h2>Web Wireframes</h2>
 <h3>Mobile Size</h3>
