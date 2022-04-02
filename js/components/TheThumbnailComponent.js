@@ -4,7 +4,7 @@ export default {
   props: ["piece"],
 
   created: function () {
-    console.log("error");
+    // console.log("error");
   },
 
   template: `

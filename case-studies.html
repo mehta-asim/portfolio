@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Case Studies Page</title>
+</head>
+
+<body>
+    <main id="app">
+        <h1 class="hidden">Asim Mehta's Case Studies</h1>
+        <div class="container">
+            <header>
+                <nav id="headerNav">
+                    <h2 class="hidden">Header Navigation</h2>
+                    <button @click="burgerMenu" id="navButton" class="expanded"></button>
+                    <burger></burger>
+                </nav>
+                <logo></logo>
+            </header>
+
+            <section id='caseStudyWrapper'>
+                <h2 class='hidden'>Case Study Section</h2>
+                <section id='caseStudySelect'>
+                    <h3 class="hidden">Case Study Select Section</h3>
+                    <ul>
+                        <li @click='caseStudyWork'>WORK</li>
+                        <li @click='caseStudyPersonal'>PERSONAL</li>
+                    </ul>
+                </section>
+
+                <section id='caseStudyDesc'>
+                    <h3 class="hidden">Case Study Description</h3>
+                    <section id='caseStudyBrief'>
+                        <h4 class="hidden">Case Study Brief</h4>
+                        <section id='briefIntro'>
+                            <h5>Amazon Prime Music Pitch</h5>
+                            <img src="/images/prime-logo.svg" alt="logo of prime music">
+                        </section>
+                        <p>The <span id='boldWord'>brief</span> was to create a new marketing strategy for their Indian
+                            Property to drive more users towards using the app and making their default music streaming
+                            app.</p>
+                    </section>
+
+                    <section id="caseStudySolution">
+                        <h4 class="hidden">Case Study Solution Section</h4>
+                        <p>Our <span id='boldWord'>solution</span> was to think of interactive and engaging ideas for
+                            social media platforms like
+                            Instagram, Facebook, Twitter which would convert followers into users.</p>
+                        <img src="/images/prime-cs-1.jpg" alt="logo of prime music with the text happy sharing">
+                    </section>
+
+                    <section id="caseStudyExecution">
+                        <h4 class="hidden">Case Study Execution Section</h4>
+                        <section id="executionDesc">
+                            <p>Our <span id='boldWord'>solution</span> was to think of interactive and engaging ideas
+                                for social media platforms like
+                                Instagram, Facebook, Twitter which would convert followers into users.</p>
+
+                            <ul>
+                                <li><img src="" alt=""></li>
+                                <li><img src="" alt=""></li>
+                                <li><img src="" alt=""></li>
+                            </ul>
+                        </section>
+                        <img src="/images/prime-cs-1.jpg" alt="logo of prime music with the text happy sharing">
+                    </section>
+
+                    <section id="caseStudyWork">
+                        <h4 class='hidden'>Case Study Work Samples Section</h4>
+                        <h5>work samples</h5>
+                        <section id="workSamples">
+                            <video controls>
+                                <source src=''>
+                            </video>
+                            <video controls>
+                                <source src=''>
+                            </video>
+                            <video controls>
+                                <source src=''>
+                            </video>
+                        </section>
+                    </section>
+
+
+                </section>
+
+            </section>
+
+
+
+            <footer>
+                <h2 id="copyrightText">© asimmehta | 2021</h2>
+                <ul id="socialMedia">
+                    <li><a href="https://github.com/mehta-asim">github<img src="images/github.svg"
+                                alt="github link"></a></li>
+                    <li><a href="https://instagram.com/asim.mehta?utm_medium=copy_link">instagram<img
+                                src="images/insta.svg" alt="instagram profile link"></a></li>
+                    <li><a href="https://www.linkedin.com/in/asimmehtawork/">linked in<img src="images/linkedin.svg"
+                                alt="linked in profile link"></a></li>
+                </ul>
+                <ul id="footerNav">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="work.html">work</a></li>
+                    <li><a href="#">casestudy</a></li>
+                    <li><a href="about-me.html">about me</a></li>
+                    <li><a href="contact-us.html">contact us</a></li>
+                </ul>
+            </footer>
+
+
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script src="js/main.js" type="module" defer></script>
+</body>
+
+</html>

@@ -13,6 +13,7 @@ header {
   order: -1;
   margin-left: 0;
   margin-right: auto;
+  padding-bottom: 10px;
 }
 
 #navButton {
@@ -21,9 +22,11 @@ header {
 
 .navMenu {
   display: initial;
+
   ul {
     display: flex;
     flex-direction: row;
+
     li {
       margin-left: 20px;
     }

@@ -1,5 +1,5 @@
 export default {
-  name: "TheHamburgerMenu",
+  name: "TheHamburgerComponent",
 
   //   props: ["piece"],
 
@@ -16,6 +16,7 @@ export default {
   <ul id="hamMenu">
       <li><a href="index.html">home</a></li>
       <li><a href="work.html">work</a></li>
+      <li><a href="case-studies.html">casestudy</a></li>
       <li><a href="about-me.html">about me</a></li>
       <li><a href="contact-us.html">contact us</a></li>
   </ul>
