@@ -11,47 +11,55 @@
 
 <body>
     <main id="app">
-    <h1 class="hidden">Asim Mehta's Portfolio</h1>
-    <div class="container">
-        <header>
-            <nav id="headerNav">
-                <h2 class="hidden">Header Navigation</h2>
-                <button @click="burgerMenu" id="navButton" class="expanded"></button>
-                <burger></burger>
-            </nav>
-            <logo></logo>
-        </header>
+        <h1 class="hidden">Asim Mehta's Portfolio</h1>
+        <div class="container">
+            <header>
+                <nav id="headerNav">
+                    <h2 class="hidden">Header Navigation</h2>
+                    <button @click="burgerMenu" id="navButton" class="expanded"></button>
+                    <burger></burger>
+                </nav>
+                <logo></logo>
+            </header>
 
-        <section id="gallery">
-            <thumb v-on:showdata="popLightBox" v-for="item in portfolioData" :piece="item" :key="item.id"></thumb>
+            <section id="gallery">
+                <thumb v-on:showdata="popLightBox" v-for="item in portfolioData" :piece="item" :key="item.id"></thumb>
 
-        </section>
+            </section>
 
-        <lightbox class="lightbox" v-on:closelb="closeLightBox" :class='{visible: isVisible}' :piece="currentPortfolioItem"></lightbox>
+            <lightbox class="lightbox" v-on:closelb="closeLightBox" :class='{visible: isVisible}'
+                :piece="currentPortfolioItem"></lightbox>
 
-        <!-- <template id="galleryPieceTemplate">
+            <section id="resume">
+                <a target="_blank" href="assets/mehtaasim-resume.pdf">Resume Here!</a>
+            </section>
+            <!-- <template id="galleryPieceTemplate">
             <div class="gallery_avatar">
                 <img src="" alt="">
             </div>
         </template> -->
-        
-        <footer>
-            <h2 id="copyrightText">© asimmehta | 2021</h2>
-            <ul id="socialMedia">
-                <li><a href="https://github.com/mehta-asim">github<img src="images/github.svg" alt="github link"></a></li>
-                <li><a href="https://instagram.com/asim.mehta?utm_medium=copy_link">instagram<img src="images/insta.svg" alt="instagram profile link"></a></li>
-                <li><a href="https://www.linkedin.com/in/asimmehtawork/">linked in<img src="images/linkedin.svg" alt="linked in profile link"></a></li>
-            </ul>
-            <ul id="footerNav">
-                <li><a href="index.html">home</a></li>
-                <li><a href="#">work</a></li>
-                <li><a href="about-me.html">about me</a></li>
-                <li><a href="contact-us.html">contact us</a></li>
-            </ul>
-        </footer>
 
-    
-    </div>
+            <footer>
+                <h2 id="copyrightText">© asimmehta | 2021</h2>
+                <ul id="socialMedia">
+                    <li><a href="https://github.com/mehta-asim">github<img src="images/github.svg"
+                                alt="github link"></a></li>
+                    <li><a href="https://instagram.com/asim.mehta?utm_medium=copy_link">instagram<img
+                                src="images/insta.svg" alt="instagram profile link"></a></li>
+                    <li><a href="https://www.linkedin.com/in/asimmehtawork/">linked in<img src="images/linkedin.svg"
+                                alt="linked in profile link"></a></li>
+                </ul>
+                <ul id="footerNav">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#">work</a></li>
+                    <li><a href="case-studies.html">casestudy</a></li>
+                    <li><a href="about-me.html">about me</a></li>
+                    <li><a href="contact-us.html">contact us</a></li>
+                </ul>
+            </footer>
+
+
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 

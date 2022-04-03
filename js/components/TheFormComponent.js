@@ -1,6 +1,6 @@
 import { sendEmail } from "./TheEmailComponent.js";
 import { processMailSuccess } from "./TheEmailProcessComponent.js";
-import { processMailFailure } from "./TheEmailProcessComponent";
+import { processMailFailure } from "./TheEmailProcessComponent.js";
 
 export default {
   name: "TheForm",

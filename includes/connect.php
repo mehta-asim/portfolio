@@ -1,26 +1,33 @@
-<?php 
-    $db_dsn = array( 
-        'host' => 'db5005716565.hosting-data.io', // this will change when you go live
-        'dbname' => 'dbs4809741', // update this with your database name
-        'charset' => 'utf8'
-    );
+<?php
 
-    $dsn = 'mysql:'.http_build_query($db_dsn, '', ';');
+$db_dsn = array(
+    'host' => 'localhost', // this will change when you go live
+    'dbname' => 'portfolio', // update this with your database name
+    'charset' => 'utf8'
+);
 
-    //This is the DB credentials
+// $db_dsn = array( 
+//     'host' => 'db5005716565.hosting-data.io', // this will change when you go live
+//     'dbname' => 'dbs4809741', // update this with your database name
+//     'charset' => 'utf8'
+// );
 
-    $db_user = 'dbu630542';
-    $db_pass = 'F26@Ip10'; // windows users leave this blank
+$dsn = 'mysql:' . http_build_query($db_dsn, '', ';');
 
-    try {
-        $pdo = new PDO($dsn, $db_user, $db_pass);
-        // var_dump($pdo);
-        // echo (in this case) is almost like console.log
-        // echo "you're in! enjoy the show";
-    } catch (PDOException $exception){
-        echo 'Connection Error:'.$exception->getMessage();
-        exit();
-    }
+//This is the DB credentials
+
+$db_user = 'root'; //dbu630542
+$db_pass = ''; // windows users leave this blank //F26@Ip10
+
+try {
+    $pdo = new PDO($dsn, $db_user, $db_pass);
+    // var_dump($pdo);
+    // echo (in this case) is almost like console.log
+    // echo "you're in! enjoy the show";
+} catch (PDOException $exception) {
+    echo 'Connection Error:' . $exception->getMessage();
+    exit();
+}
 
 
     // 'host' => 'db5005716565.hosting-data.io', // this will change when you go live

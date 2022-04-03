@@ -1,0 +1,310 @@
+.caseStudyWork {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    #caseStudySelect {
+        padding: 0px 10px;
+        // margin-left: 20px;
+
+        ul {
+            text-decoration: none;
+            display: flex;
+            justify-content: left;
+
+            li {
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+
+        // #personal-link {
+        //     background-color: black;
+        //     color: white;
+        // }
+    }
+
+    #caseStudyDesc {
+        padding: 10px 10px;
+        // display: flex;
+        // flex-direction: column;
+        // padding: 10px 10px;
+        font-family: $main-font;
+        background-color: black;
+        color: white;
+
+
+        #caseStudyBrief {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 30%;
+
+            #briefIntro {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin-bottom: 20px;
+
+                h5 {
+                    font-family: 'barlowsemibold';
+                    font-size: 2em;
+
+                }
+
+                img {
+                    width: 50%;
+                }
+
+            }
+
+            p {
+
+                // width: 30%;
+                font-size: 1.5em;
+
+            }
+        }
+
+        #caseStudySolution {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 30%;
+
+            p {
+                // width: 30%;
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+
+            img {
+                border: 1px dashed white;
+                // width: 25%;
+            }
+        }
+
+        #caseStudyExecution {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 30%;
+
+            #executionImage {
+                margin-bottom: 10px;
+                border: 1px dashed white;
+            }
+
+            #executionDesc {
+                order: -1;
+
+                p {
+                    font-size: 1.5em;
+                }
+
+                ul {
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 10px;
+
+                    li {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+
+        #caseStudyWork {
+            h5 {
+                font-family: "barlowsemibold";
+                font-size: 2em;
+                margin-bottom: 10px;
+            }
+
+            #workSamples {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+
+                video {
+                    border-bottom: 1px dashed white;
+                }
+
+                video:nth-child(1) {
+                    margin-bottom: 10px;
+                }
+
+                video:nth-child(2) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+#boldWord {
+    font-family: "barlowsemibold";
+}
+
+.caseStudyPersonal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    #caseStudySelect {
+        padding: 0px 10px;
+        // margin-left: 20px;
+
+        ul {
+            text-decoration: none;
+            display: flex;
+            justify-content: left;
+
+            li {
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    #caseStudyDesc {
+        padding: 10px 10px;
+        // display: flex;
+        // flex-direction: column;
+        // padding: 10px 10px;
+        font-family: $main-font;
+        background-color: black;
+        color: white;
+
+
+        #caseStudyBrief {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 30%;
+
+            #briefIntro {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin-bottom: 20px;
+
+                h5 {
+                    font-family: 'barlowsemibold';
+                    font-size: 2em;
+
+                }
+
+                img {
+                    width: 50%;
+                }
+
+            }
+
+            p {
+
+                // width: 30%;
+                font-size: 1.5em;
+
+            }
+        }
+
+        #caseStudySolution {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 30%;
+
+            p {
+                // width: 30%;
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+
+            img {
+                border: 1px dashed white;
+                // width: 25%;
+            }
+        }
+
+        #caseStudyExecution {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            width: 30%;
+
+            #executionImage {
+                margin-bottom: 10px;
+                border: 1px dashed white;
+            }
+
+            #executionDesc {
+                order: -1;
+
+                p {
+                    font-size: 1.5em;
+                }
+
+                ul {
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 10px;
+
+                    li {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+
+        #caseStudyWork {
+            h5 {
+                font-family: "barlowsemibold";
+                font-size: 2em;
+                margin-bottom: 10px;
+            }
+
+            #workSamples {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+
+                video {
+                    border-bottom: 1px dashed white;
+                }
+
+                video:nth-child(1) {
+                    margin-bottom: 10px;
+                }
+
+                video:nth-child(2) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+#work-link {
+    background-color: white;
+    color: black;
+}
+
+#personal-link {
+    background-color: black;
+    color: white;
+}
