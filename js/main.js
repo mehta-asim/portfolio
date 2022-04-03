@@ -5,6 +5,8 @@ import TheLightboxComponent from "./components/TheLightboxComponent.js";
 import TheThumbNail from "./components/TheThumbNailComponent.js";
 import TheLogo from "./components/TheLogoComponent.js";
 import TheForm from "./components/TheFormComponent.js";
+import TheCaseStudyWork from './components/TheCaseStudyWork.js';
+import TheCaseStudyPersonal from './components/TheCaseStudyPersonal.js';
 
 (() => {
   const myVue = new Vue({
@@ -13,7 +15,7 @@ import TheForm from "./components/TheFormComponent.js";
       //make it available in the Vue instance
       getData(null, (data) => (this.portfolioData = data));
       console.log(this.portfolioData);
-      debugger;
+      // debugger;
     },
 
     data: {
@@ -42,6 +44,9 @@ import TheForm from "./components/TheFormComponent.js";
           document.querySelector(".navMenu").classList.remove("bvisible");
         }
       },
+      // caseStudyWork(){
+      //   debugger;
+      // }
     },
 
     components: {
@@ -50,6 +55,8 @@ import TheForm from "./components/TheFormComponent.js";
       logo: TheLogo,
       lightbox: TheLightboxComponent,
       contactform: TheForm,
+      work: TheCaseStudyWork,
+      personal: TheCaseStudyPersonal,
     },
   }).$mount("#app");
 })();

@@ -22,14 +22,14 @@ function getData(params, cb) {
       // do anything else here that we want with our data
       // call a function to generate our dynamic content
       cb(data[0]);
-      data[0].forEach(piece => {
+      // data[0].forEach(piece => {
         
 
-        piece['mediaType'] = piece['mediaType'].split(',');
-        console.log(piece['mediaType']);
+      //   piece['mediaType'] = piece['mediaType'].split(',');
+      //   console.log(piece['mediaType']);
         
-      });
-      debugger;
+      // });
+      // debugger;
     })
     .catch((error) => console.error(error));
 

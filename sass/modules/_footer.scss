@@ -8,9 +8,10 @@ footer {
   padding-right: 20px;
   height: 130px;
   padding-bottom: 20px;
-  background-image: url("../images/footer-bg.svg");
+  background-image: url("../images/footer-bg-4k.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
+  background-size: 300%;
 }
 
 #copyrightText {
@@ -37,11 +38,13 @@ ul li {
 #socialMedia {
   padding-top: 40px;
   text-align: right;
+
   img {
     width: 22px;
     height: 22px;
     margin-left: 8px;
   }
+
   a {
     display: flex;
     flex-direction: row;
@@ -49,6 +52,7 @@ ul li {
     justify-content: right;
     margin-top: 5px;
   }
+
   a:hover {
     opacity: 60%;
   }

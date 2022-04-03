@@ -1,0 +1,19 @@
+#gallery {
+  // max-width: 335px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  min-width: 375px;
+  width: 100%;
+
+  img {
+    width: 30vw;
+    cursor: pointer;
+  }
+
+  img:hover {
+    opacity: 60%;
+  }
+}
